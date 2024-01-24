@@ -4,7 +4,7 @@ import seaborn as sns
 import matplotlib.ticker as mticker
 from datetime import datetime
 
-# Load and prepare the data
+# Load and prepare the data from path
 file_path = "C:\\Users\\MAZ YAFAI\\Desktop\\maaz\\cricketers.csv"  # file path
 cricket_data = pd.read_csv(file_path)
 cricket_data['Date_Of_Birth'] = pd.to_datetime(cricket_data['Date_Of_Birth'], errors='coerce')
